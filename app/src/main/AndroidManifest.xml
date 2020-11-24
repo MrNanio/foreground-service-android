@@ -17,11 +17,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <service android:name=".MyForegroundService"
+            android:enabled="true">
+        </service>
         <activity android:name=".SettingsActivity"
             android:parentActivityName=".MainActivity"
             android:label="@string/label_settings">
         </activity>
     </application>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"></uses-permission>
 
 </manifest>
