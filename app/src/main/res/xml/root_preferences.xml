@@ -29,6 +29,18 @@
             app:summaryOn="@string/attachment_summary_on"
             app:title="@string/attachment_title" />
 
+        <ListPreference
+            app:key="time_increment"
+            app:defaultValue="2"
+            app:entries="@array/time_value"
+            app:entryValues="@array/time_value"
+            app:title="@string/time_change_title"/>
+
+        <SwitchPreferenceCompat
+            app:key="start_over"
+            app:defaultValue="true"
+            app:title="@string/start_over_title"/>
+
     </PreferenceCategory>
 
 </PreferenceScreen>

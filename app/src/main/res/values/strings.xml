@@ -37,4 +37,7 @@
     <string name="attachment_title">Double speed</string>
     <string name="attachment_summary_on">Double working frequency </string>
     <string name="attachment_summary_off">Standard operating frequency</string>
+    <string name="time_change_title">Change time increment</string>
+    <string name="start_over_title">Start counter with zero values</string>
+
 </resources>
