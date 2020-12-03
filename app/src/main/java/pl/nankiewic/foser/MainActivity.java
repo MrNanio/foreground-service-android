@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateUI(){
-
         if(isMyForegroundServiceRunning()){
             buttonStart.setEnabled(false);
             buttonStop.setEnabled(true);
@@ -64,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
             buttonRestart.setEnabled(false);
             textInfoService.setText(getString(R.string.info_service_not_running));
         }
-
         textInfoSettings.setText(getPreferences());
     }
 

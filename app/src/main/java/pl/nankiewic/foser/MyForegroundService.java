@@ -24,7 +24,6 @@ public class MyForegroundService extends Service {
     //1. Kanał notyfikacji
     public static final String CHANNEL_ID = "MyForegroundServiceChannel";
     public static final String CHANNEL_NAME = "FoSer service channel";
-
     //2. Odczyt danych zapisanych w Intent
     public static final String MESSAGE = "message";
     public static final String TIME = "time";
@@ -32,9 +31,6 @@ public class MyForegroundService extends Service {
     public static final String WORK_DOUBLE = "work_double";
     public static final String TIME_INCREMENT = "time_increment";
     public static final String START_OVER = "start_over";
-
-
-
     //3. Wartości ustawień
     private String message, time;
     private Boolean show_time, do_work, double_speed, start_over;
@@ -74,7 +70,6 @@ public class MyForegroundService extends Service {
         //counter = 0;
 
         timer = new Timer();
-
         timerTask = new TimerTask() {
             @Override
             public void run() {
